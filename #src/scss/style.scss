@@ -1,0 +1,240 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+// === fonts ===
+@import "fonts";
+@import "iconsfonts";
+
+// === Base ===
+@import "base/index";
+
+// === Components ===
+@import "components/index";
+
+// === Pages ===
+@import "pages/index";
+
+.header {
+	position: relative;
+
+	&__container {
+	}
+
+	&__body {
+	}
+
+	&__logo {
+		flex: 0 0 103px;
+		margin-right: 54px;
+
+		@media screen and (max-width: 991px) {
+			margin-right: 20px;
+		}
+	}
+
+	&__menu {
+		flex: 1 1 auto;
+	}
+
+	&__list {
+	}
+
+	&__item {
+		margin-right: 30px;
+
+		@media screen and (max-width: 991px) {
+			margin-right: 15px;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+
+		@media screen and (max-width: $layoutDesktop + 'px') {
+			font-size: calc(12px + 2 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+			line-height: calc(17 / 14);
+		}
+
+		img {
+			transition: 0.3s ease all 0s;
+			margin-left: 6px;
+		}
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+		z-index: 2;
+	}
+
+	&__mail {
+		margin-right: 38px;
+
+		i {
+			background-color: $White;
+		}
+
+		@media screen and (max-width: 991px) {
+			margin-right: 15px;
+		}
+	}
+
+	&__btn {
+		padding: 14px 30px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: $Black;
+
+		&:hover {
+			color: $Blue;
+		}
+		&:active {
+			box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	&__burger {
+	}
+}
+
+.logo {
+	&__link {
+	}
+
+	&__img {
+	}
+}
+
+.menu {
+	z-index: 2;
+	&__list {
+	}
+
+	&__item {
+	}
+
+	&__link {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: $Black;
+	}
+
+	&__item--has-children {
+		cursor: pointer;
+
+		&.active {
+			& > .menu__link {
+				img {
+					transform: rotate(-180deg);
+				}
+			}
+		}
+	}
+}
+.sub-menu {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: $size-header-height;
+	bottom: 0;
+	background-color: $White;
+	padding: 27px;
+
+	&__container {
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__list {
+		flex: 0 0 25%;
+		padding: 15px;
+	}
+
+	&__item {
+		margin-bottom: 2px;
+
+		a {
+			display: inline-flex;
+			align-items: center;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 22px;
+			color: $DarkGray;
+			transition: 0.3s ease all 0s;
+
+			@media screen and (min-width: 992px) {
+				&:hover {
+					color: $Blue;
+				}
+			}
+		}
+
+		&:first-child {
+			margin-bottom: 20px;
+
+			a {
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 26px;
+				color: $Black;
+			}
+		}
+	}
+
+	&__item-img {
+		flex: 0 0 54px;
+		margin-right: 20px;
+	}
+}
+.mail {
+	&:hover {
+		i {
+			color: #5260c1;
+		}
+	}
+	&:active {
+		i {
+			box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.25);
+		}
+	}
+	
+	i {
+		width: 54px;
+		height: 46px;
+		border-radius: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: 0.3s ease all 0s;
+	}
+}
+
+.login {
+	font-weight: 600;
+	margin-right: 30px;
+	font-size: 14px;
+	line-height: 17px;
+	color: $Black;
+	transition: 0.3s ease all 0s;
+
+	@media screen and (max-width: 991px) {
+		margin-right: 15px;
+	}
+
+	&:hover {
+		color: $Blue;
+	}
+}
