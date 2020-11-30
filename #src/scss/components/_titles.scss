@@ -9,4 +9,15 @@
             line-height: calc(44 / 36);
         }
     }
+
+    &-h2 {
+        font-size: 28px;
+        line-height: 34px;
+        color: $DarkGray;
+
+        @media screen and (max-width: $layoutDesktop + 'px') {
+            font-size: calc(24px + 4 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+            line-height: calc(34 / 28);
+        }
+    }
 }

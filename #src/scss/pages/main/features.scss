@@ -1,6 +1,10 @@
 .features {
 	&__container {
 		width: 100%;
+
+		@media screen and (max-width: 768px) {
+			max-width: 566px;
+		}
 	}
 
 	&__wrapper{
@@ -13,9 +17,10 @@
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
+		flex: 1 1 auto;
 
 		@media screen and (max-width: 450px) {
-			padding: 20px 0;
+			padding: 25px 0;
 		}
 	}
 
@@ -34,6 +39,7 @@
 		}
 		@media screen and (max-width: 450px) {
 			flex: 0 0 100%;
+			padding: 5px 0;
 		}
 	}
 }

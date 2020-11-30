@@ -1,0 +1,89 @@
+.whom {
+	padding: 68px 0px;
+	
+	@media screen and (max-width: 768px) {
+		padding: 62px 0;
+	}
+	@media screen and (max-width: 575px) {
+		padding: 40px 0;
+	}
+
+	&__container {
+		@media screen and (max-width: 768px) {
+			max-width: 566px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 46px;
+		text-align: center;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 42px;
+		}
+		@media screen and (max-width: 575px) {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -16px;
+
+		@media screen and (max-width: 575px) {
+			margin: 0 -10px;
+		}
+	}
+
+	&__item {
+		padding: 18px 16px;
+		flex: 0 0 25%;
+
+		@media screen and (max-width: 768px) {
+			flex: 0 0 50%;
+		}
+		@media screen and (max-width: 575px) {
+			padding: 15px 10px;
+		}
+		@media screen and (max-width: 450px) {
+			flex: 0 0 100%;
+		}
+	}
+}
+
+.whom-item {
+	&__heading {
+		display: inline-flex;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	&__img {
+		margin-right: 20px;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 35px;
+		color: $Black;
+		display: block;
+
+		@media screen and (max-width: $layoutDesktop + 'px') {
+			font-size: calc(18px + 4 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+			line-height: calc(35 / 22);
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 22px;
+		color: $DGray;
+		max-width: 224px;
+
+		@media screen and (max-width: 450px) {
+			max-width: 100%;
+		}
+	}
+}
