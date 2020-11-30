@@ -431,6 +431,32 @@ img {
           transform: translate(0, -50%);
 }
 
+.products {
+  padding: 105px 0;
+  overflow: hidden;
+}
+
+.products__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.products .sub-menu__row {
+  margin: 0 -15px;
+}
+
+.products .sub-menu__list {
+  padding: 30px 15px;
+}
+
+.products .sub-menu__item:first-child {
+  margin-bottom: 12px;
+}
+
+.products .sub-menu__item:first-child img {
+  margin-right: 20px;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -569,9 +595,10 @@ img {
   left: 0;
   right: 0;
   top: 104px;
-  bottom: 0;
   background-color: #fff;
   padding: 27px;
+  overflow-y: auto;
+  pointer-events: none;
 }
 
 .sub-menu__row {
@@ -604,6 +631,7 @@ img {
   font-size: 14px;
   line-height: 22px;
   color: #707070;
+  pointer-events: auto;
   -webkit-transition: 0.3s ease all 0s;
   -o-transition: 0.3s ease all 0s;
   transition: 0.3s ease all 0s;
@@ -750,6 +778,18 @@ img {
     background-size: 65% !important;
   }
 
+  .products {
+    padding: 82px 0;
+  }
+
+  .products__title {
+    margin-bottom: 20px;
+  }
+
+  .products .sub-menu__list {
+    padding: 20px 15px;
+  }
+
   .header__logo {
     margin-right: 20px;
   }
@@ -760,6 +800,12 @@ img {
 
   .header__mail {
     margin-right: 15px;
+  }
+
+  .sub-menu__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%;
   }
 
   .login {
@@ -824,6 +870,20 @@ img {
 
   .header__list {
     display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .products .sub-menu__row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-y: auto;
+  }
+
+  .products .sub-menu__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
   }
 }
 
@@ -907,7 +967,21 @@ img {
             flex: 1 1 auto;
   }
 
+  .products .sub-menu__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%;
+  }
+
   .header__right {
     display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .products .sub-menu__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 200px;
+            flex: 0 0 200px;
   }
 }

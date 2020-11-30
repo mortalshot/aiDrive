@@ -22,11 +22,12 @@ $('.header__burger').click(function (event) {
     $('body').toggleClass('lock');
 })
 
+const body = document.querySelector('body');
+
 $('.menu__item--has-children').click(function(event) {
     $('.menu__item--has-children').not($(this)).removeClass('active');
     $('.menu__item--has-children').not($(this)).children('.sub-menu').slideUp(400);
     $(this).toggleClass('active').children('.sub-menu').slideToggle(400);
-    $('body').toggleClass('lock');
 })
 
 

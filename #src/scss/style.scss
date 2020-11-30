@@ -188,9 +188,10 @@
 	left: 0;
 	right: 0;
 	top: $size-header-height;
-	bottom: 0;
 	background-color: $White;
 	padding: 27px;
+	overflow-y: auto;
+	pointer-events: none;
 
 	&__container {
 	}
@@ -203,6 +204,10 @@
 	&__list {
 		flex: 0 0 25%;
 		padding: 15px;
+
+		@media screen and (max-width: 991px) {
+			flex: 0 0 33.333%;
+		}
 	}
 
 	&__item {
@@ -215,6 +220,7 @@
 			font-size: 14px;
 			line-height: 22px;
 			color: $DarkGray;
+			pointer-events: auto;
 			transition: 0.3s ease all 0s;
 
 			@media screen and (min-width: 992px) {
