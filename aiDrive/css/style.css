@@ -372,6 +372,65 @@ img {
   max-width: 224px;
 }
 
+.advantages__container {
+  position: relative;
+}
+
+.advantages__container::before {
+  content: "";
+  display: block;
+  width: 187px;
+  height: 16px;
+  margin-bottom: 29px;
+  background: url(../img/icons/advantages.svg) no-repeat left top;
+}
+
+.advantages__left {
+  padding-right: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.advantages__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 45px;
+  color: #4856b7;
+  max-width: 694px;
+}
+
+.advantages__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 22.7%;
+          flex: 0 0 22.7%;
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 21px;
+  margin-bottom: 10px;
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages__item::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #8ba6cd;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -611,6 +670,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .advantages {
+    padding: 20px 0;
+  }
+
   .header__body {
     padding: 0 4px;
   }
@@ -657,9 +720,28 @@ img {
     line-height: calc(35 / 22);
   }
 
+  .advantages__title {
+    font-size: calc(18px + 10 * ((100vw - 320px) / (1134 - 320)));
+    line-height: calc(45 / 28);
+  }
+
   .header__link {
     font-size: calc(12px + 2 * ((100vw - 320px) / (1134 - 320)));
     line-height: calc(17 / 14);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .advantages__title {
+    max-width: 448px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .advantages__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
   }
 }
 
@@ -728,6 +810,12 @@ img {
 @media screen and (max-width: 767px) {
   .site__main {
     padding: 69px 0px 0px 0px;
+  }
+
+  .advantages__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
   }
 
   .header__menu {
@@ -800,6 +888,23 @@ img {
 
   .whom-item__text {
     max-width: 100%;
+  }
+
+  .advantages__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .advantages__left {
+    padding: 0px 0px 30px 0px;
+  }
+
+  .advantages__right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
 
   .header__right {

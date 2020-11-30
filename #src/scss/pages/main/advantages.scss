@@ -1,0 +1,88 @@
+.advantages {
+	@media screen and (min-width: 768px) {
+		padding: 20px 0;
+	}
+
+	&__container {
+		position: relative;
+
+		&::before {
+			content: "";
+			display: block;
+			width: 187px;
+			height: 16px;
+			margin-bottom: 29px;
+			background: url(../img/icons/advantages.svg) no-repeat left top;
+		}
+	}
+
+	&__row {
+		@media screen and (max-width: 450px) {
+			flex-direction: column;
+		}
+	}
+
+	&__left {
+		padding-right: 20px;
+		flex: 1 1 auto;
+
+		@media screen and (max-width: 450px) {
+			padding: 0px 0px 30px 0px;
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 45px;
+		color: $Blue;
+		max-width: 694px;
+
+		@media screen and (max-width: $layoutDesktop + "px") {
+			font-size: calc(18px + 10 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+			line-height: calc(45 / 28);
+		}
+		@media screen and (max-width: 1050px) {
+			max-width: 448px;
+		}
+	}
+
+	&__right {
+		flex: 0 0 22.7%;
+
+		@media screen and (max-width: 992px) {
+			flex: 0 0 25%;
+		}
+		@media screen and (max-width: 767px) {
+			flex: 0 0 30%;
+		}
+		@media screen and (max-width: 450px) {
+			flex: 1 1 auto;
+		}
+	}
+
+	&__list {
+	}
+
+	&__item {
+		position: relative;
+		padding-left: 21px;
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::before {
+			content: "";
+			display: block;
+			width: 8px;
+			height: 8px;
+			background-color: $LBlue;
+			border-radius: 50%;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+	}
+}
