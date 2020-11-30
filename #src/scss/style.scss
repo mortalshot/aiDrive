@@ -34,11 +34,8 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: $LGray2;
+		background: $LGray;
 		z-index: 2;
-	}
-
-	&__container {
 	}
 
 	&__body {
@@ -142,9 +139,6 @@
 			box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.25);
 		}
 	}
-
-	&__burger {
-	}
 }
 
 .logo {
@@ -192,9 +186,6 @@
 	padding: 27px;
 	overflow-y: auto;
 	pointer-events: none;
-
-	&__container {
-	}
 
 	&__row {
 		display: flex;

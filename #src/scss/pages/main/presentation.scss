@@ -1,0 +1,120 @@
+.presentation {
+	padding: 21px 0px;
+}
+
+.presentation-card {
+	display: flex;
+	align-items: center;
+	margin-bottom: 156px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media screen and (max-width: 991px) {
+		margin-bottom: 90px;
+	}
+	@media screen and (max-width: 767px) {
+		margin-bottom: 50px;
+	}
+	@media screen and (max-width: 575px) {
+		flex-direction: column;
+		align-items: baseline;
+		margin-bottom: 40px;
+	}
+
+	&__image {
+		flex: 0 0 52.7%;
+
+		@media screen and (max-width: 575px) {
+			margin-bottom: 20px;
+		}
+
+		img {
+			border-radius: 20px;
+		}
+	}
+
+	&__content {
+		flex: 1 1 auto;
+		padding: 0 0 0 96px;
+
+		@media screen and (max-width: 991px) {
+			padding-left: 54px;
+		}
+		@media screen and (max-width: 767px) {
+			padding-left: 20px;
+		}
+		@media screen and (max-width: 575px) {
+			padding: 0;
+		}
+	}
+
+	&__body {
+		@media screen and (min-width: 576px) {
+			max-width: 320px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 42px;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__text {
+		margin-bottom: 42px;
+		line-height: 26px;
+
+		@media screen and (max-width: $layoutDesktop + "px") {
+			line-height: calc(26 / 16);
+		}
+		@media screen and (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__btn {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 22px;
+		color: $DarkGray;
+		transition: 0.3s ease all 0s;
+
+		span {
+			margin-right: 18px;
+		}
+
+		i {
+			font-size: 7.6px;
+		}
+
+		@media screen and (min-width: 992px) {
+			&:hover {
+				color: $Black;
+			}
+			&:active {
+				color: $Blue;
+			}
+		}
+	}
+
+	&--reverse {
+		flex-direction: row-reverse;
+
+		.presentation-card__content {
+			padding: 0px 96px 0px 0px;
+
+			@media screen and (max-width: 991px) {
+				padding-right: 54px;
+			}
+			@media screen and (max-width: 767px) {
+				padding-right: 20px;
+			}
+			@media screen and (max-width: 575px) {
+				padding: 0;
+			}
+		}
+	}
+}

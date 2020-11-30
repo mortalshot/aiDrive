@@ -253,6 +253,12 @@ img {
   color: #707070;
 }
 
+.title-h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+}
+
 .firstscreen {
   overflow: hidden;
 }
@@ -457,6 +463,79 @@ img {
   margin-right: 20px;
 }
 
+.presentation {
+  padding: 21px 0px;
+}
+
+.presentation-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 156px;
+}
+
+.presentation-card:last-child {
+  margin-bottom: 0;
+}
+
+.presentation-card__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 52.7%;
+          flex: 0 0 52.7%;
+}
+
+.presentation-card__image img {
+  border-radius: 20px;
+}
+
+.presentation-card__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0 0 0 96px;
+}
+
+.presentation-card__title {
+  margin-bottom: 42px;
+}
+
+.presentation-card__text {
+  margin-bottom: 42px;
+  line-height: 26px;
+}
+
+.presentation-card__btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #707070;
+  -webkit-transition: 0.3s ease all 0s;
+  -o-transition: 0.3s ease all 0s;
+  transition: 0.3s ease all 0s;
+}
+
+.presentation-card__btn span {
+  margin-right: 18px;
+}
+
+.presentation-card__btn i {
+  font-size: 7.6px;
+}
+
+.presentation-card--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.presentation-card--reverse .presentation-card__content {
+  padding: 0px 96px 0px 0px;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -472,7 +551,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #f2f2f2;
+  background: #f8f8f8;
   z-index: 2;
 }
 
@@ -697,6 +776,12 @@ img {
   color: #4856b7;
 }
 
+@media screen and (min-width: 576px) {
+  .presentation-card__body {
+    max-width: 320px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .advantages {
     padding: 20px 0;
@@ -716,6 +801,14 @@ img {
 @media screen and (min-width: 992px) {
   .container {
     padding: 0 30px;
+  }
+
+  .presentation-card__btn:hover {
+    color: #000;
+  }
+
+  .presentation-card__btn:active {
+    color: #4856b7;
   }
 
   .sub-menu__item a:hover {
@@ -738,6 +831,11 @@ img {
     line-height: calc(34 / 28);
   }
 
+  .title-h3 {
+    font-size: calc(18px + 8 * ((100vw - 320px) / (1134 - 320)));
+    line-height: calc(36 / 26);
+  }
+
   .firstscreen__text {
     font-size: calc(14px + 4 * ((100vw - 320px) / (1134 - 320)));
     line-height: calc(29 / 18);
@@ -751,6 +849,10 @@ img {
   .advantages__title {
     font-size: calc(18px + 10 * ((100vw - 320px) / (1134 - 320)));
     line-height: calc(45 / 28);
+  }
+
+  .presentation-card__text {
+    line-height: calc(26 / 16);
   }
 
   .header__link {
@@ -788,6 +890,18 @@ img {
 
   .products .sub-menu__list {
     padding: 20px 15px;
+  }
+
+  .presentation-card {
+    margin-bottom: 90px;
+  }
+
+  .presentation-card__content {
+    padding-left: 54px;
+  }
+
+  .presentation-card--reverse .presentation-card__content {
+    padding-right: 54px;
   }
 
   .header__logo {
@@ -864,6 +978,30 @@ img {
             flex: 0 0 30%;
   }
 
+  .products {
+    padding: 82px 0 42px;
+  }
+
+  .presentation-card {
+    margin-bottom: 50px;
+  }
+
+  .presentation-card__content {
+    padding-left: 20px;
+  }
+
+  .presentation-card__title {
+    margin-bottom: 30px;
+  }
+
+  .presentation-card__text {
+    margin-bottom: 30px;
+  }
+
+  .presentation-card--reverse .presentation-card__content {
+    padding-right: 20px;
+  }
+
   .header__menu {
     display: none;
   }
@@ -921,6 +1059,29 @@ img {
 
   .whom__item {
     padding: 15px 10px;
+  }
+
+  .presentation-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-bottom: 40px;
+  }
+
+  .presentation-card__image {
+    margin-bottom: 20px;
+  }
+
+  .presentation-card__content {
+    padding: 0;
+  }
+
+  .presentation-card--reverse .presentation-card__content {
+    padding: 0;
   }
 
   .header__body {
