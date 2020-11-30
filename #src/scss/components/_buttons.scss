@@ -8,4 +8,16 @@
     &-white {
         background-color: #fff;
     }
+
+    &-bg {
+        background-color: $Blue;
+        color: $White;
+    }
+
+    &-try {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 40px;
+    }
 }

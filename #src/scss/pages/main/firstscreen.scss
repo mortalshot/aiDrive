@@ -1,0 +1,61 @@
+.firstscreen {
+	overflow: hidden;
+
+	@media screen and (max-width: 991px) {
+		background-size: 65% !important;
+	}
+	@media screen and (max-width: 768px) {
+		min-height: 795px;
+		background-size: 88% !important;
+	}
+	@media screen and (max-width: 575px) {
+		min-height: 499px;
+		background-size: 120% !important;
+		background-position: -107% 100% !important;
+	}
+
+	&__body {
+		width: 50%;
+		padding: 83px 20px 50px 0px;
+
+		@media screen and (max-width: 768px) {
+			width: 70%;
+			padding: 177px 20px 50px 35px;
+		}
+		@media screen and (max-width: 575px) {
+			width: 100%;
+			padding: 47px 0px 50px 0px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 44px;
+
+		@media screen and (max-width: 575px) {
+			margin-bottom: 22px;
+		}
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 29px;
+		color: $DarkGray;
+		margin-bottom: 41px;
+		max-width: 335px;
+
+		@media screen and (max-width: $layoutDesktop + 'px') {
+			font-size: calc(14px + 4 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+			line-height: calc(29 / 18);
+		}
+		@media screen and (max-width: 575px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&.main {
+		@media screen and (min-width: 769px) {
+			min-height: 536px;
+		}
+	}
+}

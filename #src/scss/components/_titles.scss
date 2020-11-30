@@ -1,3 +1,12 @@
 .title {
-    
+    &-h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+
+        @media screen and (max-width: $layoutDesktop + 'px') {
+            font-size: calc(28px + 8 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+            line-height: calc(44 / 36);
+        }
+    }
 }
