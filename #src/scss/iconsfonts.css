@@ -1,17 +1,16 @@
 @font-face {
   font-family: 'icons';
-  src: url('../fonts/icons.eot?989dtd');
-  src: url('../fonts/icons.eot?989dtd#iefix') format('embedded-opentype'),
-    url('../fonts/icons.ttf?989dtd') format('truetype'),
-    url('../fonts/icons.woff?989dtd') format('woff'),
-    url('../fonts/icons.svg?989dtd#icons') format('svg');
+  src:  url('../fonts/icons.eot?760j5b');
+  src:  url('../fonts/icons.eot?760j5b#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?760j5b') format('truetype'),
+    url('../fonts/icons.woff?760j5b') format('woff'),
+    url('../fonts/icons.svg?760j5b#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
+[class^="icon-"]::before, [class*=" icon-"]::before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons' !important;
   speak: never;
@@ -26,10 +25,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-star:before {
+  content: "\e902";
+  color: #f5df68;
+}
 .icon-details:before {
   content: "\e900";
 }
-
 .icon-mail:before {
   content: "\e901";
   color: #4856b7;

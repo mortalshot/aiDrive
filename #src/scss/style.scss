@@ -7,6 +7,9 @@
 		font-style: #{$style};
 	}
 }
+// === libs ===
+@import "libs/index";
+
 // === fonts ===
 @import "fonts";
 @import "iconsfonts";

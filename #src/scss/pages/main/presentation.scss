@@ -1,14 +1,11 @@
 .presentation {
-	padding: 21px 0px;
+	padding: 21px 0px 0;
 }
 
 .presentation-card {
 	display: flex;
 	align-items: center;
 	margin-bottom: 156px;
-	&:last-child {
-		margin-bottom: 0;
-	}
 
 	@media screen and (max-width: 991px) {
 		margin-bottom: 90px;
