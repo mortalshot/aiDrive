@@ -1,4 +1,10 @@
 .reviews {
+	padding-bottom: 70px;
+
+	@media screen and (max-width: 991px) {
+		padding-bottom: 60px;
+	}
+
 	&__title {
 		border-top: 1px solid $LGray3;
 		margin-bottom: 33px;

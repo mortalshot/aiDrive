@@ -1,0 +1,101 @@
+.offer {
+	background-color: $LGray;
+	position: relative;
+	min-height: 369px;
+	display: flex;
+	align-items: center;
+
+	@media screen and (max-width: 991px) {
+		min-height: 309px;
+	}
+	@media screen and (max-width: 575px) {
+		min-height: 301px;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+
+		@media screen and (max-width: 575px) {
+			display: none;
+		}
+	}
+	&::before {
+		width: 300px;
+		height: 303px;
+		left: 0;
+		bottom: 0;
+		background: url(../img/offer/offer-bg-1.svg) no-repeat center/cover;
+
+		@media screen and (max-width: 991px) {
+			width: 195px;
+			height: 205px;
+		}
+		@media screen and (max-width: 767px) {
+			width: 145px;
+			height: 155px;
+		}
+	}
+	&::after {
+		width: 245px;
+		height: 320px;
+		right: 0;
+		bottom: 10px;
+		background: url(../img/offer/offer-bg-2.svg) no-repeat center/cover;
+
+		@media screen and (max-width: 991px) {
+			width: 160px;
+			height: 205px;
+			bottom: 0;
+		}
+		@media screen and (max-width: 767px) {
+			width: 120px;
+			height: 155px;
+		}
+	}
+
+	&__content {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__title {
+		font-size: 28px;
+		line-height: 34px;
+		margin-bottom: 30px;
+		text-align: center;
+
+		@media screen and (max-width: $layoutDesktop + "px") {
+			font-size: calc(24px + 4 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+			line-height: calc(34 / 28);
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@media screen and (max-width: 450px) {
+			flex-direction: column;
+		}
+	}
+
+	&__btn {
+		margin-right: 30px;
+		&:last-child {
+			margin-right: 0;
+		}
+
+		@media screen and (max-width: 450px) {
+			margin: 0px 0px 15px 0px;
+			width: 100%;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
