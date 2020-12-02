@@ -309,6 +309,71 @@ img {
   height: auto;
 }
 
+.btn {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  border-radius: 30px;
+  -webkit-transition: 0.3s ease all 0s;
+  -o-transition: 0.3s ease all 0s;
+  transition: 0.3s ease all 0s;
+}
+
+.btn-white {
+  background-color: #fff;
+}
+
+.btn-bg {
+  background-color: #4856b7;
+  color: #fff;
+}
+
+.btn-try {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 18px 40px;
+}
+
+.btn-request {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 18px 40px;
+  color: #868679;
+  border: 2px solid #868679;
+}
+
+.title-h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.title-h2 {
+  font-size: 28px;
+  line-height: 34px;
+  color: #707070;
+}
+
+.title-h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -424,7 +489,16 @@ img {
   display: none;
 }
 
-.header .sub-menu__row {
+.header .sub-menu--solutions .sub-menu__row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.header__burger {
+  display: none;
+}
+
+.sub-menu__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,18 +506,18 @@ img {
       flex-wrap: wrap;
 }
 
-.header .sub-menu__list {
+.sub-menu__list {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
   padding: 15px;
 }
 
-.header .sub-menu__item {
+.sub-menu__item {
   margin-bottom: 2px;
 }
 
-.header .sub-menu__item a {
+.sub-menu__item a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -460,31 +534,22 @@ img {
   transition: 0.3s ease all 0s;
 }
 
-.header .sub-menu__item:first-child {
+.sub-menu__item:first-child {
   margin-bottom: 20px;
 }
 
-.header .sub-menu__item:first-child a {
+.sub-menu__item:first-child a {
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
   color: #000;
 }
 
-.header .sub-menu__item-img {
+.sub-menu__item-img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 54px;
           flex: 0 0 54px;
   margin-right: 20px;
-}
-
-.header .sub-menu--solutions .sub-menu__row {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-.header__burger {
-  display: none;
 }
 
 .menu {
@@ -548,71 +613,6 @@ img {
 
 .login:hover {
   color: #4856b7;
-}
-
-.btn {
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 23px;
-  border-radius: 30px;
-  -webkit-transition: 0.3s ease all 0s;
-  -o-transition: 0.3s ease all 0s;
-  transition: 0.3s ease all 0s;
-}
-
-.btn-white {
-  background-color: #fff;
-}
-
-.btn-bg {
-  background-color: #4856b7;
-  color: #fff;
-}
-
-.btn-try {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 18px 40px;
-}
-
-.btn-request {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 18px 40px;
-  color: #868679;
-  border: 2px solid #868679;
-}
-
-.title-h1 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-}
-
-.title-h2 {
-  font-size: 28px;
-  line-height: 34px;
-  color: #707070;
-}
-
-.title-h3 {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 36px;
 }
 
 .footer {
@@ -1305,10 +1305,6 @@ img {
     padding: 0 30px;
   }
 
-  .header .sub-menu__item a:hover {
-    color: #4856b7;
-  }
-
   .btn:active {
     -webkit-box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.25);
             box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.25);
@@ -1321,6 +1317,10 @@ img {
   .btn-request:hover {
     background-color: #868679;
     color: #fff;
+  }
+
+  .sub-menu__item a:hover {
+    color: #4856b7;
   }
 
   .footer__item .sub-menu__item a:hover {
@@ -1353,11 +1353,6 @@ img {
     font-size: calc(14px + 2 * ((100vw - 320px) / (1366 - 320)));
   }
 
-  .header__link {
-    font-size: calc(12px + 2 * ((100vw - 320px) / (1366 - 320)));
-    line-height: calc(17 / 14);
-  }
-
   .title-h1 {
     font-size: calc(28px + 8 * ((100vw - 320px) / (1366 - 320)));
     line-height: calc(44 / 36);
@@ -1371,6 +1366,11 @@ img {
   .title-h3 {
     font-size: calc(18px + 8 * ((100vw - 320px) / (1366 - 320)));
     line-height: calc(36 / 26);
+  }
+
+  .header__link {
+    font-size: calc(12px + 2 * ((100vw - 320px) / (1366 - 320)));
+    line-height: calc(17 / 14);
   }
 
   .footer__tagline {
@@ -1470,16 +1470,16 @@ img {
     margin-right: 15px;
   }
 
-  .header .sub-menu__list {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.333%;
-            flex: 0 0 33.333%;
-  }
-
   .header .sub-menu--solutions .sub-menu__list {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
+  }
+
+  .sub-menu__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%;
   }
 
   .login {
@@ -1700,10 +1700,6 @@ img {
     padding: 0;
   }
 
-  .header .sub-menu__row {
-    margin: 0 -15px;
-  }
-
   .header .sub-menu--solutions {
     overflow-x: auto;
   }
@@ -1823,6 +1819,10 @@ img {
     position: absolute;
     right: 20px;
     top: 35px;
+  }
+
+  .sub-menu__row {
+    margin: 0 -15px;
   }
 
   .footer__logo {
@@ -2039,10 +2039,6 @@ img {
 }
 
 @media screen and (max-width: 450px) {
-  .header__right {
-    display: none;
-  }
-
   .header .sub-menu--solutions .sub-menu__list {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 41%;
