@@ -1,9 +1,12 @@
-$('.header__burger').click(function (event) {
-    $('.header__burger, .header__menu').toggleClass('active');
-    $('body').toggleClass('lock');
-})
+$('.header__burger-wrapper').click(function (event) {
+    $('.header__burger-wrapper, .header__burger, .header__menu').toggleClass('active');
+    $('body').addClass('lock');
+});
 
-const body = document.querySelector('body');
+$('.header__burger--menu').click(function (event) {
+    $('.header__burger-wrapper, .header__burger, .header__menu').removeClass('active');
+    $('body').removeClass('lock');
+});
 
 $('.header__menu .menu__item--has-children').click(function(event) {
     $('.header__menu .menu__item--has-children').not($(this)).removeClass('active');
