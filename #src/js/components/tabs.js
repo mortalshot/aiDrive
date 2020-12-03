@@ -17,3 +17,10 @@ if (tabsList.length > 0) {
         $("#" + elementID + " .tabs-triggers__item:first").click();
     }
 }
+
+$('.login').click(function (e) {
+    $('#authTabs .tabs-triggers__item:first').click();
+});
+$('.sign-up').click(function (e) {
+    $('#authTabs .tabs-triggers__item:last').click();
+});

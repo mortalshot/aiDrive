@@ -96,7 +96,18 @@
 	&__link {
 		display: flex;
 		align-items: center;
+		position: relative;
+		transition: 0.3s ease all 0s;
 
+		@media screen and (min-width: 992px) {
+			&:hover {
+				color: $Blue;
+
+				&::before {
+					transform: scale(1);
+				}
+			}
+		}
 		@media screen and (max-width: $layoutDesktop + "px") {
 			font-size: calc(12px + 2 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
 			line-height: calc(17 / 14);
@@ -107,6 +118,19 @@
 		}
 		@media screen and (max-width: 575px) {
 			justify-content: space-between;
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: $Blue;
+			position: absolute;
+			bottom: -6px;
+			left: 0;
+			transform: scale(0);
+			transition: 0.3s ease all 0s;
 		}
 
 		img {
@@ -162,13 +186,15 @@
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 17px;
-        color: $Black;
+		color: $Black;
 
-		&:hover {
-			color: $Blue;
-		}
-		&:active {
-			box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.25);
+		@media screen and (min-width: 992px) {
+			&:hover {
+				color: $Blue;
+			}
+			&:active {
+				box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.25);
+			}
 		}
 	}
 
@@ -308,68 +334,68 @@
 
 			&--menu {
 				position: absolute;
-				right: 20px;
-				top: 35px;
+				right: 32px;
+				top: 30px;
 			}
 		}
 	}
 }
 
 .sub-menu {
-    &__row {
-        display: flex;
-        flex-wrap: wrap;
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
 
-        @media screen and (max-width: 767px) {
-            margin: 0 -15px;
-        }
-    }
+		@media screen and (max-width: 767px) {
+			margin: 0 -15px;
+		}
+	}
 
-    &__list {
-        flex: 0 0 25%;
-        padding: 15px;
+	&__list {
+		flex: 0 0 25%;
+		padding: 15px;
 
-        @media screen and (max-width: 991px) {
-            flex: 0 0 33.333%;
-        }
-    }
+		@media screen and (max-width: 991px) {
+			flex: 0 0 33.333%;
+		}
+	}
 
-    &__item {
-        margin-bottom: 2px;
+	&__item {
+		margin-bottom: 2px;
 
-        a {
-            display: inline-flex;
-            align-items: center;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 22px;
-            color: $DarkGray;
-            pointer-events: auto;
-            transition: 0.3s ease all 0s;
+		a {
+			display: inline-flex;
+			align-items: center;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 22px;
+			color: $DarkGray;
+			pointer-events: auto;
+			transition: 0.3s ease all 0s;
 
-            @media screen and (min-width: 992px) {
-                &:hover {
-                    color: $Blue;
-                }
-            }
-        }
+			@media screen and (min-width: 992px) {
+				&:hover {
+					color: $Blue;
+				}
+			}
+		}
 
-        &:first-child {
-            margin-bottom: 20px;
+		&:first-child {
+			margin-bottom: 20px;
 
-            a {
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 26px;
-                color: $Black;
-            }
-        }
-    }
+			a {
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 26px;
+				color: $Black;
+			}
+		}
+	}
 
-    &__item-img {
-        flex: 0 0 54px;
-        margin-right: 20px;
-    }
+	&__item-img {
+		flex: 0 0 54px;
+		margin-right: 20px;
+	}
 }
 
 .logo {
@@ -403,6 +429,12 @@
 				img {
 					transform: rotate(-180deg);
 				}
+			}
+		}
+
+		.menu__link {
+			&::before {
+				display: none;
 			}
 		}
 	}

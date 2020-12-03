@@ -108,6 +108,11 @@
 
 			&__item {
 				margin-bottom: 4px;
+				&:first-child {
+					a {
+						font-weight: 400;
+					}
+				}
 				&:last-child {
 					margin-bottom: 0;
 				}
