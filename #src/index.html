@@ -3,18 +3,13 @@
 })
 
 <main class="site__main">
-	<section class="firstscreen main"
-		style="background: #f8f8f8 url(img/firstscreen/firstscreen-1.svg) no-repeat right bottom;">
-		<div class="firstscreen__container container">
-			<div class="firstscreen__body">
-				<h1 class="firstscreen__title title-h1">Artificial Intelligence CRM –
-					incrase your efficiency today!</h1>
-				<div class="firstscreen__text">Everything you need in one CRM system-from sales to project managment,
-					from task to strategic management</div>
-				<a href="#tryItFree" class="firstscreen__btn btn btn-bg btn-try popup-link">Try it free</a>
-			</div>
-		</div>
-	</section>
+	@@include('html-components/firstscreen.html', {
+	"secclass": "main",
+	"bgcolor": "#f8f8f8",
+	"bgimg": "firstscreen-1.svg",
+	"title": "Artificial Intelligence CRM – incrase your efficiency today!",
+	"breadcrumbsClass": "d-none"
+	})
 	<section class="features">
 		<div class="features__container container">
 			<div class="features__wrapper">
@@ -28,80 +23,32 @@
 		</div>
 	</section>
 
-	<section class="whom">
-		<div class="whom__container container">
-			<h2 class="whom__title title-h2">For whom?</h2>
-			<div class="whom__items">
-				<div class="whom__item whom-item">
-					<a href="" class="whom-item__heading">
-						<div class="whom-item__img">
-							<img src="img/icons/cart-fill.svg" alt="">
-						</div>
-						<div class="whom-item__title">Sales</div>
-					</a>
-					<div class="whom-item__body">
-						<div class="whom-item__text">Focus on sales, remove all unnecessary things. Lead the lead to the
-							sale, organize contacts. Study the statistics of your sales department</div>
-					</div>
-				</div>
-				<div class="whom__item whom-item">
-					<a href="" class="whom-item__heading">
-						<div class="whom-item__img">
-							<img src="img/icons/sale.svg" alt="">
-						</div>
-						<div class="whom-item__title">Marketing</div>
-					</a>
-					<div class="whom-item__body">
-						<div class="whom-item__text">Create pipelines and control advertising campaigns. Get to know
-							your client better, analyze statistics, and improve lead acquisition</div>
-					</div>
-				</div>
-				<div class="whom__item whom-item">
-					<a href="" class="whom-item__heading">
-						<div class="whom-item__img">
-							<img src="img/icons/folder-open.svg" alt="">
-						</div>
-						<div class="whom-item__title">Projects</div>
-					</a>
-					<div class="whom-item__body">
-						<div class="whom-item__text">After closing the deal, complete it successfully, so that the
-							customer returns to you for a repeat purchase. Use a wide range of tools</div>
-					</div>
-				</div>
-				<div class="whom__item whom-item">
-					<a href="" class="whom-item__heading">
-						<div class="whom-item__img">
-							<img src="img/icons/like.svg" alt="">
-						</div>
-						<div class="whom-item__title">Service</div>
-					</a>
-					<div class="whom-item__body">
-						<div class="whom-item__text">Support the client after the project is closed. Organize and manage
-							customer requests in one place</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	@@include('html-components/whom.html', {
+	"whomclass": "",
+	"title": "For whom?",
+	"item1img": "cart-fill.svg",
+	"item1title": "Sales",
+	"item1text": "Focus on sales, remove all unnecessary things. Lead the lead to the sale, organize contacts. Study the statistics of your sales department",
+	"item2img": "sale.svg",
+	"item2title": "Marketing",
+	"item2text": "Create pipelines and control advertising campaigns. Get to know your client better, analyze statistics, and improve lead acquisition",
+	"item3img": "folder-open.svg",
+	"item3title": "Projects",
+	"item3text": "After closing the deal, complete it successfully, so that the customer returns to you for a repeat purchase. Use a wide range of tools",
+	"item4class": "",
+	"item4img": "like.svg",
+	"item4title": "Service",
+	"item4text": "Support the client after the project is closed. Organize and manage customer requests in one place",
+	})
 
-	<section class="advantages">
-		<div class="advantages__container container">
-			<div class="advantages__row row">
-				<div class="advantages__left">
-					<h2 class="advantages__title">Don’t separate sales and deals execution. Lead the project from start
-						to finish and get strong sales and repeat sales growth</h2>
-				</div>
-				<div class="advantages__right">
-					<ul class="advantages__list">
-						<li class="advantages__item">Sales increase</li>
-						<li class="advantages__item">LTV increase</li>
-						<li class="advantages__item">Customer satisfaction</li>
-						<li class="advantages__item">Reputation</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+	@@include('html-components/advantages.html', {
+	"class": "",
+	"title": "Don’t separate sales and deals execution. Lead the project from start to finish and get strong sales and repeat sales growth",
+	"item1": "Sales increase",
+	"item2": "LTV increase",
+	"item3": "Customer satisfaction",
+	"item4": "Reputation"
+	})
 
 	<section class="products">
 		<div class="products__container container">
@@ -367,130 +314,9 @@
 		</div>
 	</section>
 
-	<section class="reviews">
-		<div class="reviews__container container">
-			<h2 class="reviews__title title-h2">Reviews</h2>
-			<div class="reviews__cards">
-				<div class="reviews__card review">
-					<div class="review__wrapper">
-						<div class="review__content">
-							<div class="review__text">We switched to your system half a year ago and are very happy. The
-								results on the face, our company has grown several times and increased profits.</div>
-							<div class="review__name">Name, Company Name</div>
-						</div>
-						<div class="review__rating">
-							<div class="review__stars">
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-							</div>
-							<div class="review__value">
-								<div class="review__mark">4.9</div>
-								<div class="review__average">Averagе 4.5</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="reviews__card review">
-					<div class="review__wrapper">
-						<div class="review__content">
-							<div class="review__text">The results on the face, our company has grown several times and increased profits.</div>
-							<div class="review__name">Name, Company Name</div>
-						</div>
-						<div class="review__rating">
-							<div class="review__stars">
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-							</div>
-							<div class="review__value">
-								<div class="review__mark">4.0</div>
-								<div class="review__average">Averagе 4.3</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="reviews__card review">
-					<div class="review__wrapper">
-						<div class="review__content">
-							<div class="review__text">The results on the face, our company has grown several times and increased profits. We switched to your system half a year ago and are very happy. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iste distinctio quia cum, incidunt at magnam facere dolorum, veniam neque dolore qui reprehenderit natus doloribus quibusdam doloremque, accusamus culpa repellendus. Iusto, quod pariatur.</div>
-							<div class="review__name">Name, Company Name</div>
-						</div>
-						<div class="review__rating">
-							<div class="review__stars">
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-							</div>
-							<div class="review__value">
-								<div class="review__mark">3.5</div>
-								<div class="review__average">Averagе 4</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="reviews__card review">
-					<div class="review__wrapper">
-						<div class="review__content">
-							<div class="review__text">We switched to your system half a year ago and are very happy. The
-								results on the face, our company has grown several times and increased profits.</div>
-							<div class="review__name">Name, Company Name</div>
-						</div>
-						<div class="review__rating">
-							<div class="review__stars">
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-							</div>
-							<div class="review__value">
-								<div class="review__mark">4.9</div>
-								<div class="review__average">Averagе 4.5</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="reviews__card review">
-					<div class="review__wrapper">
-						<div class="review__content">
-							<div class="review__text">We switched to your system half a year ago and are very happy. The
-								results on the face, our company has grown several times and increased profits.</div>
-							<div class="review__name">Name, Company Name</div>
-						</div>
-						<div class="review__rating">
-							<div class="review__stars">
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-							</div>
-							<div class="review__value">
-								<div class="review__mark">4.9</div>
-								<div class="review__average">Averagе 4.5</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="offer">
-		<div class="offer__container container">
-			<div class="offer__content">
-				<h2 class="offer__title">Improve your effectivity with AI Drive</h2>
-				<div class="offer__buttons">
-					<a href="#tryItFree" class="offer__btn btn btn-bg btn-try popup-link">Try it free</a>
-					<a href="" class="offer__btn btn btn-request">Request a demo</a>
-				</div>
-			</div>
-		</div>
-	</section>
+	@@include('html-components/reviews.html')
+	
+	@@include('html-components/offer.html')
 
 	@@include('html-components/modals.html')
 </main>

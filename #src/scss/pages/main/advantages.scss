@@ -85,4 +85,12 @@
 			transform: translate(0, -50%);
 		}
 	}
+
+	&--sales {
+		@include adaptiv-value("padding-top", 100, 40, 1);
+		
+		@media screen and (min-width: 768px) {
+			@include adaptiv-value("padding-top", 100, 40, 1);
+		}
+	}
 }

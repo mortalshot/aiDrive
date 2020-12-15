@@ -50,6 +50,25 @@
 			flex: 0 0 100%;
 		}
 	}
+
+	&--three {
+		.whom-item {
+			flex: 0 0 33.333%;
+
+			@media screen and (max-width: 575px) {
+				flex: 0 0 50%;
+			}
+			@media screen and (max-width: 450px) {
+				flex: 0 0 100%;
+			}
+		}
+	}
+
+	&--inner {
+		.whom__title {
+			text-align: left;
+		}
+	}
 }
 
 .whom-item {

@@ -1,0 +1,179 @@
+@@include('html-components/_header.html', {
+"title": "firstscreen"
+})
+
+<main class="site__main">
+	@@include('html-components/firstscreen.html', {
+	"secclass": "main",
+	"bgcolor": "#f8f8f8",
+	"bgimg": "sales-bg.svg",
+	"title": "Sales",
+	"breadcrumbsClass": ""
+	})
+
+	@@include('html-components/advantages.html', {
+	"class": "advantages--sales",
+	"title": "The key to a successful sales CRM is the simplicity and speed of working with the lead. Therefore, our system is as simple as possible and fully customizable",
+	"item1": "All in one CRM",
+	"item2": "Single-page interface",
+	"item3": "Full customizability",
+	"item4": "Automation"
+	})
+
+	<section class="products products--inner">
+		<div class="products__container container">
+			<h2 class="products__title title-h2">Products</h2>
+			<div class="sub-menu__row row">
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Deal.svg" alt="">
+							<span>Deals and pipelines</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Automation.svg" alt="">
+							<span>Automation</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Contacts.svg" alt="">
+							<span>Contacts</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Reports.svg" alt="">
+							<span>Reports</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="presentation">
+		<div class="presentation__container container">
+			<div class="presentation__cards">
+				<div class="presentation__card presentation-card">
+					<div class="presentation-card__image">
+						<img src="img/presentation/sales-1.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Deals and pipelines</div>
+							<h3 class="presentation-card__title title-h3">Single page working</h3>
+							<div class="presentation-card__text">Work as quickly as possible using the method of work on a single page. Any action in 2 clicks in our sales interface.</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card presentation-card--reverse">
+					<div class="presentation-card__image">
+						<img src="img/presentation/sales-2.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Deals and pipelines</div>
+							<h3 class="presentation-card__title title-h3">Sales pipeline</h3>
+							<div class="presentation-card__text">Make the sales process simple and enjoyable with visual native board interface. Just move the lead to the next column closer to the sale. Each column is a step in the sales pipeline.</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card">
+					<div class="presentation-card__image">
+						<img src="img/presentation/sales-3.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Deals and pipelines</div>
+							<h3 class="presentation-card__title title-h3">Customize</h3>
+							<div class="presentation-card__text">You can customize the sales pipelines, leads information and other for yourself. Create an environment that meets your business needs.</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card presentation-card--reverse">
+					<div class="presentation-card__image">
+						<img src="img/presentation/sales-4.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Automation</div>
+							<h3 class="presentation-card__title title-h3">Automate</h3>
+							<div class="presentation-card__text">Set up automatic actions and dependencies between sales steps. Minimize manual work, let the system work for you and save you time.</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card">
+					<div class="presentation-card__image">
+						<img src="img/presentation/sales-5.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Contacts</div>
+							<h3 class="presentation-card__title title-h3">Organize contacts</h3>
+							<div class="presentation-card__text">Organize contacts into groups, set automated rules  for contacts of certain groups.</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card presentation-card--reverse">
+					<div class="presentation-card__image">
+						<img src="img/presentation/sales-5.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Reports</div>
+							<h3 class="presentation-card__title title-h3">Control</h3>
+							<div class="presentation-card__text">Monitor your sales Department, view the report for each employee for any metrics. Find the features that distinguish a successful salesperson and implement them for the entire team.</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card">
+					<div class="presentation-card__image">
+						<img src="img/presentation/sales-7.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Contacts</div>
+							<h3 class="presentation-card__title title-h3">Dashboard</h3>
+							<div class="presentation-card__text">Monitor your sales Department's performance on the Dashboard. In a convenient and clear format, find out all about your sales in 1 minute.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@@include('html-components/whom.html', {
+	"whomclass": "whom--three whom--inner",
+	"title": "Other",
+	"item1img": "cart-fill.svg",
+	"item1title": "Sales",
+	"item1text": "Focus on sales, remove all unnecessary things. Lead the lead to the sale, organize contacts. Study the statistics of your sales department",
+	"item2img": "folder-open.svg",
+	"item2title": "Projects",
+	"item2text": "After closing the deal, complete it successfully, so that the customer returns to you for a repeat purchase. Use a wide range of tools",
+	"item3img": "like.svg",
+	"item3title": "Service",
+	"item3text": "Support the client after the project is closed. Organize and manage customer requests in one place",
+	"item4class": "d-none",
+	"item4img": "",
+	"item4title": "",
+	"item4text": "",
+	})
+
+	@@include('html-components/reviews.html')
+	
+	@@include('html-components/offer.html')
+
+	@@include('html-components/modals.html')
+</main>
+
+@@include('html-components/_footer.html')

@@ -15,7 +15,6 @@
 	}
 
 	&__body {
-		width: 50%;
 		padding: 83px 20px 50px 0px;
 
 		@media screen and (max-width: 768px) {
@@ -28,11 +27,23 @@
 		}
 	}
 
-	&__title {
-		margin-bottom: 44px;
+	&__heading {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include adaptiv-value("margin-bottom", 44, 22, 1);
+	}
 
-		@media screen and (max-width: 575px) {
-			margin-bottom: 22px;
+	&__content {
+		@media screen and (min-width: 576px) {
+			width: 50%;
+		}
+	}
+
+	&__title {
+		padding-right: 15px;
+		@media screen and (min-width: 576px) {
+			flex: 0 0 50%;
 		}
 	}
 
@@ -44,7 +55,7 @@
 		margin-bottom: 41px;
 		max-width: 335px;
 
-		@media screen and (max-width: $layoutDesktop + 'px') {
+		@media screen and (max-width: $layoutDesktop + "px") {
 			font-size: calc(14px + 4 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
 			line-height: calc(29 / 18);
 		}

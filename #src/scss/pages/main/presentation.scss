@@ -52,6 +52,13 @@
 		}
 	}
 
+	&__category {
+		margin-bottom: 4px;
+		font-size: calc(12px + 2 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+		line-height: calc(22 / 14);
+		color: $DarkGray;
+	}
+
 	&__title {
 		margin-bottom: 42px;
 
@@ -61,14 +68,10 @@
 	}
 
 	&__text {
-		margin-bottom: 42px;
 		line-height: 26px;
 
 		@media screen and (max-width: $layoutDesktop + "px") {
 			line-height: calc(26 / 16);
-		}
-		@media screen and (max-width: 767px) {
-			margin-bottom: 30px;
 		}
 	}
 
@@ -77,6 +80,8 @@
 		font-size: 14px;
 		line-height: 22px;
 		color: $DarkGray;
+		display: inline-block;
+		margin-top: 42px;
 		transition: 0.3s ease all 0s;
 
 		span {
@@ -94,6 +99,9 @@
 			&:active {
 				color: $Blue;
 			}
+		}
+		@media screen and (max-width: 767px) {
+			margin-top: 30px;
 		}
 	}
 

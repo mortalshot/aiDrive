@@ -1,0 +1,26 @@
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	line-height: 19px;
+
+	@media screen and (min-width: $layoutDesktop + "px") {
+		font-size: calc(6px + 6 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+		line-height: calc(19 / 12);
+	}
+
+	&__home {
+		@include adaptiv-value("padding-right", 20, 10, 1);
+		border-right: 1px solid rgba(0, 0, 0, 0.3);
+		color: $Black;
+	}
+
+	&__current {
+		@include adaptiv-value("padding-left", 20, 10, 1);
+		color: rgba(0, 0, 0, 0.4);
+	}
+
+	&.d-none {
+		display: none;
+	}
+}
