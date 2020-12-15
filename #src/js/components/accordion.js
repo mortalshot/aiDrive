@@ -6,7 +6,6 @@ $('.accordion__title').click(function (event) {
         $('#' + accordionid + ' ' + '.accordion__title').not($(this)).removeClass('active');
         $('#' + accordionid + ' ' + '.accordion__text').not($(this).next()).slideUp(300);
     }
-    $(this).toggleClass('active').next().slideToggle(300);
 
-    $('.accordion .accordion__title:first').click();
+    $(this).toggleClass('active').next().slideToggle(300);
 });

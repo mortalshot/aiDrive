@@ -7,4 +7,5 @@
 @@include('components/slider.js')
 @@include('components/popup.js')
 @@include('components/tabs.js')
+@@include('components/accordion.js')
 

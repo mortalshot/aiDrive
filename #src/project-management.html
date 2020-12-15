@@ -1,0 +1,240 @@
+@@include('html-components/_header.html', {
+"title": "Project management"
+})
+
+<main class="site__main">
+	@@include('html-components/firstscreen.html', {
+	"secclass": "",
+	"bgcolor": "#f8f8f8",
+	"bgimg": "project-management-bg.svg",
+	"title": "Project management",
+	"breadcrumbsClass": ""
+	})
+
+	@@include('html-components/advantages.html', {
+	"class": "advantages--sales",
+	"title": "Effective project management largely depends on a set of special tools and their ease of use, as well as the flexibility to configure the environment for your tasks",
+	"item1": "Kanban, Gantt, List, Spreadsheet",
+	"item2": "4 level structure",
+	"item3": "Chats, Boxes",
+	"item4": "Timetracking, daily planning"
+	})
+
+	<section class="products products--inner">
+		<div class="products__container container">
+			<h2 class="products__title title-h2">Products</h2>
+			<div class="sub-menu__row row">
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Managment.svg" alt="">
+							<span>Management</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Modes.svg" alt="">
+							<span>Modes</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Tools.svg" alt="">
+							<span>Tools</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Team2.svg" alt="">
+							<span>Team</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="presentation">
+		<div class="presentation__container container">
+			<div class="presentation__cards">
+				<div class="presentation__card presentation-card">
+					<div class="presentation-card__image">
+						<img src="img/presentation/project-1.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Management</div>
+							<h3 class="presentation-card__title title-h3">Flexible structure</h3>
+							<div class="presentation-card__text">Flexible structure that allows you to adapt your work environment to your needs. The hierarchy of our system allows you to use up to 4 levels of nesting. Space, Folder, Project, Task. This number of levels allows you to create the correct hierarchy for any task.</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card presentation-card--reverse">
+					<div class="presentation-card__image">
+						<img src="img/presentation/project-2.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Modes</div>
+							<h3 class="presentation-card__title title-h3">View modes</h3>
+							<div class="presentation-card__text">You have all the possibilities of project management open to you, using all the main ways of setting tasks. Kanban, Gantt, List, Spreadsheet</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card">
+					<div class="presentation-card__image">
+						<img src="img/presentation/project-3.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Communication</div>
+							<h3 class="presentation-card__title title-h3">Flexible structure</h3>
+							<div class="presentation-card__text">You can create a chat for each space, folder, project, or task. Full-fledged group chat, with real-time correspondence, with audio and video support. You do not need to use Skype, messengers or other third-party programs, all correspondence is directly in the same place where the task is</div>
+
+							<div id="presentationAccordion-3" class="presentation-card__accordion accordion accordion-one">
+								<div class="accordion__item">
+									<h2 class="accordion__title">Notifications</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam.</div>
+								</div>
+								<div class="accordion__item">
+									<h2 class="accordion__title">Guest access</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam. Lorem ipsum dolor sit amet.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card presentation-card--reverse">
+					<div class="presentation-card__image">
+						<img src="img/presentation/project-4.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Tools</div>
+							<h3 class="presentation-card__title title-h3">Box and docs</h3>
+							<div class="presentation-card__text">All project materials are in the same place as the tasks. You can refer to auxiliary materials at any stage of the task. it is convenient and easy to add them or find them in correspondence. Create a library for your team (regulations, job descriptions, checklists, and more)</div>
+							<div id="presentationAccordion-4" class="presentation-card__accordion accordion accordion-one">
+								<div class="accordion__item">
+									<h2 class="accordion__title">Project folders</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam.</div>
+								</div>
+								<div class="accordion__item">
+									<h2 class="accordion__title">Docs, wiki, bases</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam. Lorem ipsum dolor sit amet.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card">
+					<div class="presentation-card__image">
+						<img src="img/presentation/project-5.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Tools</div>
+							<h3 class="presentation-card__title title-h3">Daily planning</h3>
+							<div class="presentation-card__text">Set the available time of your working day, specify the hours of work and rest. And the system will prioritize tasks and make your daily schedule itself, showing that you may not be able to make it.</div>
+
+							<div id="presentationAccordion-5" class="presentation-card__accordion accordion accordion-one">
+								<div class="accordion__item">
+									<h2 class="accordion__title">Timing</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam.</div>
+								</div>
+								<div class="accordion__item">
+									<h2 class="accordion__title">Schedule</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam. Lorem ipsum dolor sit amet.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card presentation-card--reverse">
+					<div class="presentation-card__image">
+						<img src="img/presentation/project-6.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Tools</div>
+							<h3 class="presentation-card__title title-h3">Strategy planing</h3>
+							<div class="presentation-card__text">Use special tools for strategic management. Create a roadmap for any project in Gantt. Use the calendar and goals tools for a different view of  project management.</div>
+							<div id="presentationAccordion-6" class="presentation-card__accordion accordion accordion-one">
+								<div class="accordion__item">
+									<h2 class="accordion__title">Gantt</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam.</div>
+								</div>
+								<div class="accordion__item">
+									<h2 class="accordion__title">Goals</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam. Lorem ipsum dolor sit amet.</div>
+								</div>
+								<div class="accordion__item">
+									<h2 class="accordion__title">Calendar</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam. Lorem ipsum dolor sit amet.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card">
+					<div class="presentation-card__image">
+						<img src="img/presentation/project-7.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Team</div>
+							<h3 class="presentation-card__title title-h3">Manage team</h3>
+							<div class="presentation-card__text">Control, manage, and improve your team's performance. Be aware of team loading and delegate tasks correctly. Record your work hours and calculate your salary.</div>
+
+							<div id="presentationAccordion-7" class="presentation-card__accordion accordion accordion-one">
+								<div class="accordion__item">
+									<h2 class="accordion__title">Planning</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam.</div>
+								</div>
+								<div class="accordion__item">
+									<h2 class="accordion__title">Timetracking</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam. Lorem ipsum dolor sit amet.</div>
+								</div>
+								<div class="accordion__item">
+									<h2 class="accordion__title">Reports</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam. Lorem ipsum dolor sit amet.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@@include('html-components/whom.html', {
+	"whomclass": "whom--three whom--inner",
+	"title": "Other",
+	"item1img": "cart-fill.svg",
+	"item1title": "Sales",
+	"item1text": "Focus on sales, remove all unnecessary things. Lead the lead to the sale, organize contacts. Study the statistics of your sales department",
+	"item2img": "sale.svg",
+	"item2title": "Marketing",
+	"item2text": "Create pipelines and control advertising campaigns. Get to know your client better, analyze statistics, and improve lead acquisition",
+	"item3img": "like.svg",
+	"item3title": "Service",
+	"item3text": "Support the client after the project is closed. Organize and manage customer requests in one place",
+	"item4class": "d-none",
+	"item4img": "",
+	"item4title": "",
+	"item4text": "",
+	})
+
+	@@include('html-components/reviews.html')
+	
+	@@include('html-components/offer.html')
+
+	@@include('html-components/modals.html')
+</main>
+
+@@include('html-components/_footer.html')

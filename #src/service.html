@@ -1,0 +1,149 @@
+@@include('html-components/_header.html', {
+"title": "Sales"
+})
+
+<main class="site__main">
+	@@include('html-components/firstscreen.html', {
+	"secclass": "",
+	"bgcolor": "#f8f8f8",
+	"bgimg": "service-bg.svg",
+	"title": "Service",
+	"breadcrumbsClass": ""
+	})
+
+	@@include('html-components/advantages.html', {
+	"class": "advantages--sales",
+	"title": "Customer support can be an additional source of sales. Minimizing resources to support this department is the key to cheap repeat leads",
+	"item1": "Tickets",
+	"item2": "Unified faq database",
+	"item3": "Department score",
+	"item4": "Statistics"
+	})
+
+	<section class="products products--inner">
+		<div class="products__container container">
+			<h2 class="products__title title-h2">Products</h2>
+			<div class="sub-menu__row row">
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Tickets.svg" alt="">
+							<span>Tickets</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Wiki.svg" alt="">
+							<span>Wiki</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Quality.svg" alt="">
+							<span>Quality control</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Statistics.svg" alt="">
+							<span>Statistics</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="presentation">
+		<div class="presentation__container container">
+			<div class="presentation__cards">
+				<div class="presentation__card presentation-card">
+					<div class="presentation-card__image">
+						<img src="img/presentation/service-1.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Tickets</div>
+							<h3 class="presentation-card__title title-h3">Support tickets</h3>
+							<div class="presentation-card__text">Integrate the ticket module on your site. Collect all questions directly in the CRM. Make customer support several times more efficient and faster. Answer all questions without additional software, without leaving the CRM.</div>
+							<div id="presentationAccordion-1" class="presentation-card__accordion accordion accordion-one">
+								<div class="accordion__item">
+									<h2 class="accordion__title">Tickets module</h2>
+									<div class="accordion__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, totam.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card presentation-card--reverse">
+					<div class="presentation-card__image">
+						<img src="img/presentation/service-2.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Wiki</div>
+							<h3 class="presentation-card__title title-h3">Unified Wiki</h3>
+							<div class="presentation-card__text">Sync your database of useful materials and frequently asked questions with CRM. Add new content directly from CRM to your site and in the opposite direction.</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card">
+					<div class="presentation-card__image">
+						<img src="img/presentation/service-3.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Tickets</div>
+							<h3 class="presentation-card__title title-h3">Quality control</h3>
+							<div class="presentation-card__text">Use the functionality to access the shared customer base to perform quality control tasks for other departments.</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card presentation-card--reverse">
+					<div class="presentation-card__image">
+						<img src="img/presentation/service-4.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Statistics</div>
+							<h3 class="presentation-card__title title-h3">Improve service</h3>
+							<div class="presentation-card__text">Monitor and analyze your customer's relationship to your products and services. Fix problems and make improvements.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@@include('html-components/whom.html', {
+	"whomclass": "whom--three whom--inner",
+	"title": "Other",
+	"item1img": "cart-fill.svg",
+	"item1title": "Sales",
+	"item1text": "Focus on sales, remove all unnecessary things. Lead the lead to the sale, organize contacts. Study the statistics of your sales department",
+	"item2img": "folder-open.svg",
+	"item2title": "Projects",
+	"item2text": "After closing the deal, complete it successfully, so that the customer returns to you for a repeat purchase. Use a wide range of tools",
+	"item3img": "like.svg",
+	"item3title": "Service",
+	"item3text": "Support the client after the project is closed. Organize and manage customer requests in one place",
+	"item4class": "d-none",
+	"item4img": "",
+	"item4title": "",
+	"item4text": "",
+	})
+
+	@@include('html-components/reviews.html')
+	
+	@@include('html-components/offer.html')
+
+	@@include('html-components/modals.html')
+</main>
+
+@@include('html-components/_footer.html')
