@@ -69,4 +69,21 @@
 			min-height: 536px;
 		}
 	}
+
+	&.content-page{ 
+		min-height: 1px;
+
+		.firstscreen__body {
+			@include adaptiv-value("padding-top", 70, 40, 1);
+			@include adaptiv-value("padding-bottom", 70, 40, 1);
+		}
+
+		.firstscreen__heading {
+			margin-bottom: 0;
+		}
+
+		.firstscreen__content {
+			display: none;
+		}
+	}
 }

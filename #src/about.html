@@ -1,0 +1,60 @@
+@@include('html-components/_header.html', {
+"title": "About us"
+})
+
+<main class="site__main">
+	@@include('html-components/firstscreen.html', {
+	"secclass": "content-page",
+	"bgcolor": "#f8f8f8",
+	"bgimg": "",
+	"title": "About us",
+	"breadcrumbsClass": ""
+	})
+
+	<section class="about-us">
+		<div class="container">
+			<div class="about-us__row row">
+				<div class="about-us__item">
+					<div class="about-us__content">
+						<h3 class="about-us__title title-h3">All in one</h3>
+						<div class="about-us__text">We have created a CRM system in which you can manage all areas of
+							your business without dividing it between different software. Thanks to this, business
+							processes are perfectly synchronized. You minimize the chance of mistakes, increase team
+							efficiency, and increase customer satisfaction.</div>
+					</div>
+				</div>
+				<div class="about-us__item">
+					<div class="about-us__content">
+						<h3 class="about-us__title title-h3">All included</h3>
+						<div class="about-us__text">Our approach to pricing is based on transparency and simplicity. We
+							do not hide various necessary functions under different additional fees and tariffs. You get
+							one price for all the features of our system, without exceptions.</div>
+					</div>
+				</div>
+				<div class="about-us__item">
+					<div class="about-us__content">
+						<h3 class="about-us__title title-h3">Flexibile prices</h3>
+						<div class="about-us__text">We also adhere to a flexible pricing policy. Therefore, our CRM is
+							suitable for both micro and large businesses. This approach also means that we can review
+							your situation and offer you the best conditions in the market. Find the best prices, we
+							will do everything to make you the best offer.</div>
+					</div>
+				</div>
+				<div class="about-us__item">
+					<div class="about-us__content">
+						<h3 class="about-us__title title-h3">Constant improvement</h3>
+						<div class="about-us__text">We are constantly developing and improving our CRM. We actively
+							communicate with customers and collect feedback. You can be sure that our system will keep
+							up with the challenges of the world and the pains of your business.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@@include('html-components/offer.html')
+
+	@@include('html-components/modals.html')
+</main>
+
+@@include('html-components/_footer.html')

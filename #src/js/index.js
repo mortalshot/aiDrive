@@ -8,4 +8,5 @@
 @@include('components/popup.js')
 @@include('components/tabs.js')
 @@include('components/accordion.js')
+@@include('components/table.js')
 

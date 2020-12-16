@@ -1,0 +1,62 @@
+@@include('html-components/_header.html', {
+"title": "Prices"
+})
+
+<main class="site__main">
+	@@include('html-components/firstscreen.html', {
+	"secclass": "content-page",
+	"bgcolor": "#f8f8f8",
+	"bgimg": "",
+	"title": "Prices",
+	"breadcrumbsClass": ""
+	})
+
+	<section class="advantages mt-5 advantages--price">
+		<div class="advantages__container container">
+			<div class="advantages__row row">
+				<div class="advantages__left">
+					<h2 class="advantages__title">We adhere to a flexible pricing policy. Therefore our system is
+						suitable for both micro and large businesses</h2>
+				</div>
+				<div class="advantages__right">
+					<div class="mark-green">
+						<div class="mark-green__wrapper"><span>Best <br> price <br> </span> guarantee</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about-us about-us--three">
+		<div class="container">
+			<div class="about-us__row row">
+				<div class="about-us__item">
+					<div class="about-us__content">
+						<h3 class="about-us__title title-h3">Flexibile prices</h3>
+						<div class="about-us__text">We also adhere to a flexible pricing policy. Therefore, our CRM is suitable for both micro and large businesses. Don't rely on prices, but on your goals and preferences. We are confident that we can reach an agreement.</div>
+					</div>
+				</div>
+				
+				<div class="about-us__item">
+					<div class="about-us__content">
+						<h3 class="about-us__title title-h3">Best price guarantee</h3>
+						<div class="about-us__text">We guarantee that you will do everything possible to make you the best offer. If you find similar features at a lower price, we will make a better offer.</div>
+					</div>
+				</div>
+
+				<div class="about-us__item">
+					<div class="about-us__content">
+						<h3 class="about-us__title title-h3">All included</h3>
+						<div class="about-us__text">Our approach to pricing is based on transparency and simplicity. We do not hide various necessary functions under different additional fees and tariffs. You get one price for all the features of our system, without exceptions.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@@include('html-components/offer.html')
+
+	@@include('html-components/modals.html')
+</main>
+
+@@include('html-components/_footer.html')

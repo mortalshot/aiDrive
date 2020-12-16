@@ -6,7 +6,7 @@ body {
     color: $fontColor;
     overflow-x: hidden;
 
-    @media screen and (max-width: $layoutDesktop + 'px') {
+    @media screen and (max-width: $layoutDesktop + "px") {
         font-size: calc(14px + 2 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
     }
 
@@ -49,6 +49,10 @@ body {
     display: flex;
 }
 
+.mt-5 {
+    margin-top: 5em;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -57,4 +61,47 @@ img {
 
 .d-none {
     display: none;
+}
+
+.mark-green {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 25px;
+
+    @media screen and (max-width: $layoutDesktop + "px") {
+        font-size: calc(18px + 8 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+        line-height: calc(31 / 26);
+    }
+
+    span {
+        font-size: 26px;
+        line-height: 31px;
+
+        @media screen and (max-width: $layoutDesktop + "px") {
+            font-size: calc(14px + 4 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile})));
+            line-height: calc(22 / 18);
+        }
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../img/icons/prices-star.svg) no-repeat center/cover;
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
 }

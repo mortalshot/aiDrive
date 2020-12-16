@@ -1,0 +1,103 @@
+@@include('html-components/_header.html', {
+"title": "Analytics"
+})
+
+<main class="site__main">
+	@@include('html-components/firstscreen.html', {
+	"secclass": "",
+	"bgcolor": "#f8f8f8",
+	"bgimg": "analytics-bg.svg",
+	"title": "Analytics",
+	"breadcrumbsClass": ""
+	})
+
+	@@include('html-components/advantages.html', {
+	"class": "advantages--sales",
+	"title": "The ability to quickly and flexibly check all metrics gives you control over your business. And instead leaves time for expansion",
+	"item1": "All metrics",
+	"item2": "Customize dashboard",
+	"item3": "Customer satisfaction",
+	"item4": "Statistics"
+	})
+
+	<section class="products products--inner">
+		<div class="products__container container">
+			<h2 class="products__title title-h2">Products</h2>
+			<div class="sub-menu__row row">
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Metric.svg" alt="">
+							<span>Metrics</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="sub-menu__list">
+					<li class="sub-menu__item">
+						<a href="">
+							<img src="img/icons/Dashboard.svg" alt="">
+							<span>Dashboard</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="presentation">
+		<div class="presentation__container container">
+			<div class="presentation__cards">
+				<div class="presentation__card presentation-card">
+					<div class="presentation-card__image">
+						<img src="img/presentation/analis-1.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Metrics</div>
+							<h3 class="presentation-card__title title-h3">Control everything</h3>
+							<div class="presentation-card__text">Get all metrics for your main business areas. Full control of the all metrics of departments and team performance metrics.</div>
+						</div>
+					</div>
+				</div>
+				<div class="presentation__card presentation-card presentation-card--reverse">
+					<div class="presentation-card__image">
+						<img src="img/presentation/analis-2.gif" alt="">
+					</div>
+					<div class="presentation-card__content">
+						<div class="presentation-card__body">
+							<div class="presentation-card__category">Dashboard</div>
+							<h3 class="presentation-card__title title-h3">Make it fast</h3>
+							<div class="presentation-card__text">Check all the indicators of your business in a couple of minutes. Optimize your company's management and spend time on expansion.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@@include('html-components/whom.html', {
+	"whomclass": "whom--inner",
+	"title": "Other",
+	"item1img": "cart-fill.svg",
+	"item1title": "Sales",
+	"item1text": "Focus on sales, remove all unnecessary things. Lead the lead to the sale, organize contacts. Study the statistics of your sales department",
+	"item2img": "sale.svg",
+	"item2title": "Marketing",
+	"item2text": "Create pipelines and control advertising campaigns. Get to know your client better, analyze statistics, and improve lead acquisition",
+	"item3img": "folder-open.svg",
+	"item3title": "Projects",
+	"item3text": "After closing the deal, complete it successfully, so that the customer returns to you for a repeat purchase. Use a wide range of tools",
+	"item4class": "",
+	"item4img": "Service",
+	"item4title": "Service",
+	"item4text": "Support the client after the project is closed. Organize and manage customer requests in one place",
+	})
+
+	@@include('html-components/reviews.html')
+	
+	@@include('html-components/offer.html')
+
+	@@include('html-components/modals.html')
+</main>
+
+@@include('html-components/_footer.html')
