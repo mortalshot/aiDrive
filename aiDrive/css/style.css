@@ -990,6 +990,29 @@ textarea.form__input {
   display: none;
 }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts__item {
+  margin-bottom: 8px;
+}
+
+.contacts__link {
+  color: #000;
+  -webkit-transition: 0.3s ease all 0s;
+  -o-transition: 0.3s ease all 0s;
+  transition: 0.3s ease all 0s;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -1597,6 +1620,50 @@ textarea.form__input {
           flex: 0 0 22.7%;
 }
 
+.advantages__right.form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.advantages__right.form .form__row {
+  margin: 0 -12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.advantages__right.form .form__item {
+  padding: 14px 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0;
+}
+
+.advantages__right.form .form__item--md-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.advantages__right.form .form__privacy {
+  font-size: 14px;
+  line-height: 22px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.advantages__right.form .form__privacy a {
+  color: #000;
+  text-decoration: underline;
+  -webkit-transition: 0.3s ease all 0s;
+  -o-transition: 0.3s ease all 0s;
+  transition: 0.3s ease all 0s;
+}
+
 .advantages__item {
   position: relative;
   padding-left: 21px;
@@ -1624,6 +1691,16 @@ textarea.form__input {
 
 .advantages--sales {
   padding-top: 100px;
+}
+
+.advantages--contacts {
+  padding: 0;
+  margin-top: 86px;
+}
+
+.advantages--contacts .advantages__row {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .products {
@@ -2192,6 +2269,10 @@ textarea.form__input {
     color: #fff;
   }
 
+  .contacts__link:hover {
+    color: #4856b7;
+  }
+
   .header__link:hover {
     color: #4856b7;
   }
@@ -2216,6 +2297,10 @@ textarea.form__input {
   }
 
   .footer__item .sub-menu__item a:hover {
+    color: #4856b7;
+  }
+
+  .advantages__right.form .form__privacy a:hover {
     color: #4856b7;
   }
 
@@ -2332,6 +2417,11 @@ textarea.form__input {
     line-height: calc(45 / 28);
   }
 
+  .advantages__right.form .form__privacy {
+    font-size: calc( 12px + 2 * ((100vw - 320px) / (1366 - 320)));
+    line-height: calc(22 / 14);
+  }
+
   .presentation-card__text {
     line-height: calc(26 / 16);
   }
@@ -2371,6 +2461,14 @@ textarea.form__input {
     padding-left: calc(10px + 10 * ((100vw - 320px) / (1046)));
   }
 
+  .contacts {
+    padding-top: calc(15px + 17 * ((100vw - 320px) / (1046)));
+  }
+
+  .contacts {
+    padding-bottom: calc(15px + 17 * ((100vw - 320px) / (1046)));
+  }
+
   .firstscreen__heading {
     margin-bottom: calc(22px + 22 * ((100vw - 320px) / (1046)));
   }
@@ -2383,8 +2481,20 @@ textarea.form__input {
     padding-bottom: calc(40px + 30 * ((100vw - 320px) / (1046)));
   }
 
+  .advantages__right.form .form__item {
+    padding-top: calc(5px + 9 * ((100vw - 320px) / (1046)));
+  }
+
+  .advantages__right.form .form__item {
+    padding-bottom: calc(5px + 9 * ((100vw - 320px) / (1046)));
+  }
+
   .advantages--sales {
     padding-top: calc(40px + 60 * ((100vw - 320px) / (1046)));
+  }
+
+  .advantages--contacts {
+    margin-top: calc(40px + 46 * ((100vw - 320px) / (1046)));
   }
 
   .products--inner .products__title {
@@ -2848,6 +2958,12 @@ textarea.form__input {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 30%;
             flex: 0 0 30%;
+  }
+
+  .advantages__right.form .form__item--md-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 
   .advantages--price .advantages__container::before {

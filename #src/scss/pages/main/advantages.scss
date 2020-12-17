@@ -59,9 +59,58 @@
 		@media screen and (max-width: 450px) {
 			flex: 1 1 auto;
 		}
-	}
 
-	&__list {
+		&.form {
+			flex: 0 0 50%;
+
+			.form {
+				&__row {
+					margin: 0 -12px;
+					flex-wrap: wrap;
+				}
+
+				&__item {
+					padding: 14px 12px;
+					@include adaptiv-value("padding-top", 14, 5, 1);
+					@include adaptiv-value("padding-bottom", 14, 5, 1);
+					flex: 1 1 auto;
+					margin: 0;
+
+					&--md-6 {
+						flex: 0 0 50%;
+
+						@media screen and (max-width: 767px) {
+							flex: 0 0 100%;
+						}
+					}
+				}
+
+				&__privacy {
+					font-size: 14px;
+					line-height: 22px;
+					flex: 1 1 auto;
+
+					@media screen and (max-width: $layoutDesktop + "px") {
+						font-size: calc(
+							12px + 2 * ((100vw - #{$layoutMobile}px) / (#{$layoutDesktop} - #{$layoutMobile}))
+						);
+						line-height: calc(22 / 14);
+					}
+
+					a {
+						color: $Black;
+						text-decoration: underline;
+						transition: 0.3s ease all 0s;
+
+						@media screen and (min-width: 992px) {
+							&:hover {
+								color: $Blue;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	&__item {
@@ -88,7 +137,7 @@
 
 	&--sales {
 		@include adaptiv-value("padding-top", 100, 40, 1);
-		
+
 		@media screen and (min-width: 768px) {
 			@include adaptiv-value("padding-top", 100, 40, 1);
 		}
@@ -117,6 +166,16 @@
 			@media screen and (max-width: 767px) {
 				max-width: 100%;
 			}
+		}
+	}
+
+	&--contacts {
+		padding: 0;
+		@include adaptiv-value("margin-top", 86, 40, 1);
+
+		.advantages__row {
+			padding-bottom: 20px;
+			border-bottom: 1px solid $Gray;
 		}
 	}
 }

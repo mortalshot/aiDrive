@@ -1,0 +1,21 @@
+.contacts {
+	display: flex;
+	flex-direction: column;
+	@include adaptiv-value("padding-top", 32, 15, 1);
+	@include adaptiv-value("padding-bottom", 32, 15, 1);
+
+	&__item {
+		margin-bottom: 8px;
+	}
+	
+	&__link {
+		color: $Black;
+		transition: 0.3s ease all 0s;
+
+		@media screen and (min-width: 992px) {
+			&:hover {
+				color: $Blue;
+			}
+		}
+	}
+}

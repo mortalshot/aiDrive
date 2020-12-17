@@ -1,0 +1,60 @@
+@@include('html-components/_header.html', {
+"title": "Contact us"
+})
+
+<main class="site__main">
+	@@include('html-components/firstscreen.html', {
+	"secclass": "content-page",
+	"bgcolor": "#f8f8f8",
+	"bgimg": "",
+	"title": "Contact us",
+	"breadcrumbsClass": ""
+	})
+
+	<section class="advantages advantages--contacts">
+		<div class="advantages__container container">
+			<div class="advantages__row row">
+				<div class="advantages__left">
+					<h2 class="advantages__title">Customer support can be an additional source of sales</h2>
+					<div class="contacts">
+						<div class="contacts__item">
+							<a href="mailto:info@gmail.com" class="contacts__link">info@gmail.com</a>
+						</div>
+						<div class="contacts__item">
+							<a href="tel: 85555555555" class="contacts__link">8-555-555-55-55</a>
+						</div>
+					</div>
+				</div>
+				<div class="advantages__right form">
+					<form action="#" id="contactForm" class="form__body">
+						<div class="form__row row">
+							<div class="form__item form__item--md-6">
+								<input id="contactName" type="text" name="name" class="form__input" required placeholder="Name*:">
+							</div>
+							<div class="form__item form__item--md-6">
+								<input id="contactEmail" type="text" name="email" class="form__input" required placeholder="Mail*:">
+							</div>
+						</div>
+						<div class="form__row row">
+							<div class="form__item">
+								<textarea name="message" id="contactMessage" class="form__input" placeholder="Message*:"></textarea>
+							</div>
+						</div>
+						<div class="form__row row">
+							<div class="form__item">
+								<div class="form__privacy">I agree with <a href="">therms&nbsp;conditions</a> and <a href="">privacy&nbsp;policy</a> </div>
+							</div>
+							<div class="form__item">
+								<button type="submit" class="form__button btn btn-bg">Sent</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	@@include('html-components/modals.html')
+</main>
+
+@@include('html-components/_footer.html')
