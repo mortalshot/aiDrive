@@ -13,6 +13,13 @@
 		@include adaptiv-value("padding-right", 20, 10, 1);
 		border-right: 1px solid rgba(0, 0, 0, 0.3);
 		color: $Black;
+		transition: 0.3s ease all 0s;
+
+		@media screen and (min-width: 992px) {
+			&:hover {
+				color: $Blue
+			}
+		}
 	}
 
 	&__current {
